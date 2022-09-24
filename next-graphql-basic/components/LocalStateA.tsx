@@ -9,6 +9,8 @@ export const LocalStateA: VFC = () => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     todoVar([...todoVar(), { title: input }])
+    console.log('var', todoVar())
+    console.log('todo', todos)
     setInput('')
   }
 
